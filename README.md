@@ -1,6 +1,6 @@
 # hstack
 
-Agent skills from [pstack](https://github.com/cursor/plugins/tree/main/pstack), [Lauren Tan](https://x.com/poteto)'s Cursor plugin, ported so they run in Claude Code, Codex, Pi, and any other harness that reads [Agent Skills](https://agentskills.io).
+Agent skills from [pstack](https://github.com/cursor/plugins/tree/main/pstack), [Lauren Tan](https://x.com/poteto)'s Cursor plugin, plus `make-pr-easy-to-review` from Cursor's [cursor-team-kit](https://github.com/cursor/plugins/tree/main/cursor-team-kit), ported so they run in Claude Code, Codex, Pi, and any other harness that reads [Agent Skills](https://agentskills.io).
 
 Each skill is its own Claude Code plugin under `plugins/<name>/`, and the same folder installs into any harness with `npx skills`.
 
@@ -23,7 +23,7 @@ In Claude Code you can install from the plugin marketplace instead:
 
 ## Invoking a skill
 
-Every skill runs only when you ask for it. The model never picks one up on its own.
+Every skill except `make-pr-easy-to-review` runs only when you ask for it. The model can start `make-pr-easy-to-review` on its own when you ask to tidy a PR, and it asks before it rewrites history.
 
 | Harness | Command |
 | --- | --- |
@@ -52,6 +52,7 @@ Text after the command is the request, for example `/why does the retry loop cap
 | `interrogate` | Adversarial code review by one reviewer per model, merged into a verdict: act on, consider, noted, dismissed. It never applies changes. | |
 | `no-comments` | Runs the Comment Sicko subagent over a diff, deletes comments that explain bad code, fixes the code, and offers to enforce claimed constraints with types, tests, or lints. | `how`, `why` |
 | `correct` | Finds the mistakes agents keep repeating in a repo and makes each one impossible, preferring architecture, then types, then lints, then tests, then docs. | |
+| `make-pr-easy-to-review` | Makes a PR easy to review without changing what the code does. It regroups noisy commits in dependency order, checks that the code is identical afterward, and rewrites the description with a TL;DR, risks, and where to start reading. | |
 | `create-verification-skill` | Generates a project-local skill that launches your app, drives it the way a user does, and captures proof. | |
 
 ### Plan and run long work
@@ -74,16 +75,18 @@ Text after the command is the request, for example `/why does the retry loop cap
 
 A skill in the "Works best with" column is optional. When it isn't installed, the skill does that part itself.
 
-## How the port differs from pstack
+## How the port differs from the originals
 
-The skill text is pstack's, with these changes:
+The pstack skill text is unchanged except for these points:
 
 - **Subagents.** Cursor's `Task` tool, `generalPurpose` type, and `readonly` flag became plain instructions to spawn a subagent and tell it not to edit files, with the Claude Code name where it helps. Each skill that spawns subagents also says what to do in a harness that can't spawn them.
 - **Models.** pstack picks a model per role from `pstack-models.mdc`, with Grok and Claude defaults. Here, each skill says which roles need your strongest model and which can use a faster one. `interrogate` and `show-me-your-work` use different model families when the harness offers them, and say so when it doesn't.
 - **Paths.** `.cursor/skills/` and Cursor transcript paths became the Claude Code, Codex, and Pi equivalents.
 - **Skills outside this repo.** pstack's `poteto-mode`, `architect`, `arena`, `maintain-verification-skill`, and principle skills aren't ported. Where a skill called one of them, the step now says what that skill would have done in a sentence or two.
 - **Comment Sicko.** The `no-comments` plugin bundles the `comment-sicko` agent for Claude Code and keeps a copy in `references/` that other harnesses pass to a general subagent.
-- **Codex.** Each skill has `agents/openai.yaml` with `allow_implicit_invocation: false`, which matches `disable-model-invocation: true` in its frontmatter.
+- **Codex.** Each skill that sets `disable-model-invocation: true` has `agents/openai.yaml` with `allow_implicit_invocation: false`, so Codex also runs it only on request.
+
+`make-pr-easy-to-review` needed no changes. It already used only `git` and `gh`.
 
 ## Development
 
@@ -97,6 +100,6 @@ It checks that every plugin folder, `plugin.json`, and marketplace entry agree, 
 
 ## Credits
 
-The skills are by Lauren Tan, from [pstack](https://github.com/cursor/plugins/tree/main/pstack), ported from commit `0b8e952` (pstack 0.15.26). The port is by zeralight. The repo layout follows [humanlayer/skills](https://github.com/humanlayer/skills).
+The pstack skills are by Lauren Tan, from [pstack](https://github.com/cursor/plugins/tree/main/pstack), ported from commit `0b8e952` (pstack 0.15.26). `make-pr-easy-to-review` is by Eric Zakariasson, from [cursor-team-kit](https://github.com/cursor/plugins/tree/main/cursor-team-kit) at commit `bca6129`. The port is by zeralight. The repo layout follows [humanlayer/skills](https://github.com/humanlayer/skills).
 
 MIT licensed. See [LICENSE](LICENSE).

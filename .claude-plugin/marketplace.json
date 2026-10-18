@@ -5,7 +5,7 @@
     "name": "zeralight"
   },
   "metadata": {
-    "description": "Lauren Tan's pstack skills, ported to Claude Code, Codex, Pi, and other Agent Skills harnesses",
+    "description": "Lauren Tan's pstack skills and Cursor's make-pr-easy-to-review, ported to Claude Code, Codex, Pi, and other Agent Skills harnesses",
     "version": "1.0.0"
   },
   "plugins": [
@@ -140,6 +140,22 @@
         "status",
         "summary",
         "handoff"
+      ]
+    },
+    {
+      "name": "make-pr-easy-to-review",
+      "description": "Make a PR easy to review: clean up noisy commits, rewrite the description, and add reviewer guidance without changing code behavior",
+      "version": "1.0.0",
+      "author": {
+        "name": "Eric Zakariasson"
+      },
+      "source": "./plugins/make-pr-easy-to-review",
+      "category": "productivity",
+      "keywords": [
+        "pull-request",
+        "code-review",
+        "git",
+        "commits"
       ]
     },
     {
