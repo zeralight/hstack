@@ -1,0 +1,17 @@
+{
+  "name": "why",
+  "description": "Investigate why code is shaped the way it is across git, tickets, docs, chat, and telemetry, with calibrated confidence",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lauren Tan"
+  },
+  "homepage": "https://github.com/zeralight/hstack/tree/main/plugins/why",
+  "repository": "https://github.com/zeralight/hstack",
+  "license": "MIT",
+  "keywords": [
+    "history",
+    "rationale",
+    "investigation",
+    "mcp"
+  ]
+}

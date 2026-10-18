@@ -1,0 +1,16 @@
+{
+  "name": "correct",
+  "description": "Find the mistakes agents keep repeating in a repo and make each one impossible with architecture, types, lints, or tests",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lauren Tan"
+  },
+  "homepage": "https://github.com/zeralight/hstack/tree/main/plugins/correct",
+  "repository": "https://github.com/zeralight/hstack",
+  "license": "MIT",
+  "keywords": [
+    "agents",
+    "lint",
+    "guardrails"
+  ]
+}

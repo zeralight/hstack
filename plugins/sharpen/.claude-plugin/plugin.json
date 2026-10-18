@@ -1,0 +1,15 @@
+{
+  "name": "sharpen",
+  "description": "Sharpen a task before starting: the expert approach, the real goal, and the right level of specification",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lauren Tan"
+  },
+  "homepage": "https://github.com/zeralight/hstack/tree/main/plugins/sharpen",
+  "repository": "https://github.com/zeralight/hstack",
+  "license": "MIT",
+  "keywords": [
+    "planning",
+    "prompting"
+  ]
+}

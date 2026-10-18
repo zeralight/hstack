@@ -1,0 +1,16 @@
+{
+  "name": "blast-radius",
+  "description": "Find what a change could break outside the diff, and prove the one fact it's safe because of by running real code",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lauren Tan"
+  },
+  "homepage": "https://github.com/zeralight/hstack/tree/main/plugins/blast-radius",
+  "repository": "https://github.com/zeralight/hstack",
+  "license": "MIT",
+  "keywords": [
+    "review",
+    "risk",
+    "verification"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "in-your-own-words",
+  "description": "Restate what you think the user's goals are and what problem they're solving",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lauren Tan"
+  },
+  "homepage": "https://github.com/zeralight/hstack/tree/main/plugins/in-your-own-words",
+  "repository": "https://github.com/zeralight/hstack",
+  "license": "MIT",
+  "keywords": [
+    "alignment",
+    "requirements"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "no-comments",
+  "description": "Run Comment Sicko over a diff, fix accepted findings, and encode claimed constraints instead of commenting them",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lauren Tan"
+  },
+  "homepage": "https://github.com/zeralight/hstack/tree/main/plugins/no-comments",
+  "repository": "https://github.com/zeralight/hstack",
+  "license": "MIT",
+  "keywords": [
+    "comments",
+    "code-quality",
+    "refactoring"
+  ],
+  "agents": [
+    "./agents/comment-sicko.md"
+  ]
+}

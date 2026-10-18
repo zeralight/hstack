@@ -1,0 +1,16 @@
+{
+  "name": "show-me-your-work",
+  "description": "Keep a reviewable TSV decision trail for long-running or unattended work, audited and cross-reviewed",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lauren Tan"
+  },
+  "homepage": "https://github.com/zeralight/hstack/tree/main/plugins/show-me-your-work",
+  "repository": "https://github.com/zeralight/hstack",
+  "license": "MIT",
+  "keywords": [
+    "audit",
+    "decision-log",
+    "autonomy"
+  ]
+}

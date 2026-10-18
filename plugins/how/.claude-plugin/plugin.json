@@ -1,0 +1,16 @@
+{
+  "name": "how",
+  "description": "Explain how a subsystem works with parallel explorers and one architectural explanation",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lauren Tan"
+  },
+  "homepage": "https://github.com/zeralight/hstack/tree/main/plugins/how",
+  "repository": "https://github.com/zeralight/hstack",
+  "license": "MIT",
+  "keywords": [
+    "architecture",
+    "onboarding",
+    "codebase"
+  ]
+}

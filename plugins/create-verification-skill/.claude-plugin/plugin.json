@@ -1,0 +1,16 @@
+{
+  "name": "create-verification-skill",
+  "description": "Generate a project-local skill that drives your app the way a user does and captures proof",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lauren Tan"
+  },
+  "homepage": "https://github.com/zeralight/hstack/tree/main/plugins/create-verification-skill",
+  "repository": "https://github.com/zeralight/hstack",
+  "license": "MIT",
+  "keywords": [
+    "verification",
+    "testing",
+    "e2e"
+  ]
+}

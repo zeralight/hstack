@@ -1,0 +1,251 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "hstack",
+  "owner": {
+    "name": "zeralight"
+  },
+  "metadata": {
+    "description": "Lauren Tan's pstack skills, ported to Claude Code, Codex, Pi, and other Agent Skills harnesses",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "blast-radius",
+      "description": "Find what a change could break outside the diff, and prove the one fact it's safe because of by running real code",
+      "version": "1.0.0",
+      "author": {
+        "name": "Lauren Tan"
+      },
+      "source": "./plugins/blast-radius",
+      "category": "productivity",
+      "keywords": [
+        "review",
+        "risk",
+        "verification"
+      ]
+    },
+    {
+      "name": "bro",
+      "description": "Restate the last message in plain human language, with no jargon",
+      "version": "1.0.0",
+      "author": {
+        "name": "Lauren Tan"
+      },
+      "source": "./plugins/bro",
+      "category": "productivity",
+      "keywords": [
+        "writing",
+        "plain-language"
+      ]
+    },
+    {
+      "name": "correct",
+      "description": "Find the mistakes agents keep repeating in a repo and make each one impossible with architecture, types, lints, or tests",
+      "version": "1.0.0",
+      "author": {
+        "name": "Lauren Tan"
+      },
+      "source": "./plugins/correct",
+      "category": "productivity",
+      "keywords": [
+        "agents",
+        "lint",
+        "guardrails"
+      ]
+    },
+    {
+      "name": "create-verification-skill",
+      "description": "Generate a project-local skill that drives your app the way a user does and captures proof",
+      "version": "1.0.0",
+      "author": {
+        "name": "Lauren Tan"
+      },
+      "source": "./plugins/create-verification-skill",
+      "category": "productivity",
+      "keywords": [
+        "verification",
+        "testing",
+        "e2e"
+      ]
+    },
+    {
+      "name": "figure-it-out",
+      "description": "Design an auditable playbook for a large or ambiguous change, run it as a hypothesis loop, and log every decision",
+      "version": "1.0.0",
+      "author": {
+        "name": "Lauren Tan"
+      },
+      "source": "./plugins/figure-it-out",
+      "category": "productivity",
+      "keywords": [
+        "planning",
+        "migration",
+        "workflow"
+      ]
+    },
+    {
+      "name": "how",
+      "description": "Explain how a subsystem works with parallel explorers and one architectural explanation",
+      "version": "1.0.0",
+      "author": {
+        "name": "Lauren Tan"
+      },
+      "source": "./plugins/how",
+      "category": "productivity",
+      "keywords": [
+        "architecture",
+        "onboarding",
+        "codebase"
+      ]
+    },
+    {
+      "name": "in-your-own-words",
+      "description": "Restate what you think the user's goals are and what problem they're solving",
+      "version": "1.0.0",
+      "author": {
+        "name": "Lauren Tan"
+      },
+      "source": "./plugins/in-your-own-words",
+      "category": "productivity",
+      "keywords": [
+        "alignment",
+        "requirements"
+      ]
+    },
+    {
+      "name": "interrogate",
+      "description": "Adversarial multi-model code review that ends in a judged verdict, not auto-applied changes",
+      "version": "1.0.0",
+      "author": {
+        "name": "Lauren Tan"
+      },
+      "source": "./plugins/interrogate",
+      "category": "productivity",
+      "keywords": [
+        "code-review",
+        "multi-model",
+        "adversarial"
+      ]
+    },
+    {
+      "name": "ketchup",
+      "description": "Catch the user up on what changed since their last message and list every call waiting on them",
+      "version": "1.0.0",
+      "author": {
+        "name": "Lauren Tan"
+      },
+      "source": "./plugins/ketchup",
+      "category": "productivity",
+      "keywords": [
+        "status",
+        "summary",
+        "handoff"
+      ]
+    },
+    {
+      "name": "no-comments",
+      "description": "Run Comment Sicko over a diff, fix accepted findings, and encode claimed constraints instead of commenting them",
+      "version": "1.0.0",
+      "author": {
+        "name": "Lauren Tan"
+      },
+      "source": "./plugins/no-comments",
+      "category": "productivity",
+      "keywords": [
+        "comments",
+        "code-quality",
+        "refactoring"
+      ]
+    },
+    {
+      "name": "sharpen",
+      "description": "Sharpen a task before starting: the expert approach, the real goal, and the right level of specification",
+      "version": "1.0.0",
+      "author": {
+        "name": "Lauren Tan"
+      },
+      "source": "./plugins/sharpen",
+      "category": "productivity",
+      "keywords": [
+        "planning",
+        "prompting"
+      ]
+    },
+    {
+      "name": "show-me-your-work",
+      "description": "Keep a reviewable TSV decision trail for long-running or unattended work, audited and cross-reviewed",
+      "version": "1.0.0",
+      "author": {
+        "name": "Lauren Tan"
+      },
+      "source": "./plugins/show-me-your-work",
+      "category": "productivity",
+      "keywords": [
+        "audit",
+        "decision-log",
+        "autonomy"
+      ]
+    },
+    {
+      "name": "teach",
+      "description": "Explain a body of work plainly by combining the how and why skills into one paced explanation",
+      "version": "1.0.0",
+      "author": {
+        "name": "Lauren Tan"
+      },
+      "source": "./plugins/teach",
+      "category": "productivity",
+      "keywords": [
+        "explanation",
+        "learning",
+        "onboarding"
+      ]
+    },
+    {
+      "name": "technical-writing",
+      "description": "Layered technical-writing standard: Diataxis, Google developer style, STE, and Global English",
+      "version": "1.0.0",
+      "author": {
+        "name": "Lauren Tan"
+      },
+      "source": "./plugins/technical-writing",
+      "category": "productivity",
+      "keywords": [
+        "writing",
+        "docs",
+        "style-guide"
+      ]
+    },
+    {
+      "name": "unslop",
+      "description": "Cut AI tells from any writing",
+      "version": "1.0.0",
+      "author": {
+        "name": "Lauren Tan"
+      },
+      "source": "./plugins/unslop",
+      "category": "productivity",
+      "keywords": [
+        "writing",
+        "editing",
+        "style"
+      ]
+    },
+    {
+      "name": "why",
+      "description": "Investigate why code is shaped the way it is across git, tickets, docs, chat, and telemetry, with calibrated confidence",
+      "version": "1.0.0",
+      "author": {
+        "name": "Lauren Tan"
+      },
+      "source": "./plugins/why",
+      "category": "productivity",
+      "keywords": [
+        "history",
+        "rationale",
+        "investigation",
+        "mcp"
+      ]
+    }
+  ]
+}

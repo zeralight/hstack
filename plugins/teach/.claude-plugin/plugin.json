@@ -1,0 +1,16 @@
+{
+  "name": "teach",
+  "description": "Explain a body of work plainly by combining the how and why skills into one paced explanation",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lauren Tan"
+  },
+  "homepage": "https://github.com/zeralight/hstack/tree/main/plugins/teach",
+  "repository": "https://github.com/zeralight/hstack",
+  "license": "MIT",
+  "keywords": [
+    "explanation",
+    "learning",
+    "onboarding"
+  ]
+}

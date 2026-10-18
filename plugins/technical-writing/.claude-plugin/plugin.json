@@ -1,0 +1,16 @@
+{
+  "name": "technical-writing",
+  "description": "Layered technical-writing standard: Diataxis, Google developer style, STE, and Global English",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lauren Tan"
+  },
+  "homepage": "https://github.com/zeralight/hstack/tree/main/plugins/technical-writing",
+  "repository": "https://github.com/zeralight/hstack",
+  "license": "MIT",
+  "keywords": [
+    "writing",
+    "docs",
+    "style-guide"
+  ]
+}

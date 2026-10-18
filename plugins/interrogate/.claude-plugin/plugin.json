@@ -1,0 +1,16 @@
+{
+  "name": "interrogate",
+  "description": "Adversarial multi-model code review that ends in a judged verdict, not auto-applied changes",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lauren Tan"
+  },
+  "homepage": "https://github.com/zeralight/hstack/tree/main/plugins/interrogate",
+  "repository": "https://github.com/zeralight/hstack",
+  "license": "MIT",
+  "keywords": [
+    "code-review",
+    "multi-model",
+    "adversarial"
+  ]
+}
